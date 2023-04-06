@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="./bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/exercico_mod.18.css" />
+    <title>Loja Tech</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>Loja Tech</h1>
+          </div>
+          <div class="col">
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active" href="">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#produtos">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="sobre">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-sm-12">
+            <h2>Sobre nós</h2>
+            <p>
+              Bem-vindo à nossa loja! Aqui, você encontrará tudo o que precisa
+              para manter-se conectado e produtivo no mundo digital. Nós temos
+              uma ampla seleção de computadores, laptops, tablets e \ outros
+              dispositivos, de marcas renomadas e confiáveis, para atender às
+              suas necessidades específicas. Também oferecemos uma grande
+              variedade de periféricos e acessórios, incluindo monitores,
+              impressoras, teclados, mouses, fones de ouvido e muito mais. Se
+              você precisar de peças para montar ou atualizar o seu próprio
+              computador, temos uma seleção abrangente de hardware, incluindo
+              placas-mãe, processadores, placas de vídeo e memória RAM. Nosso
+              atendimento é feito por especialistas em tecnologia, que estão
+              sempre prontos para ajudar você a escolher os produtos certos para
+              as suas necessidades. Além disso, oferecemos serviços de reparo e
+              manutenção, para ajudá-lo a manter o seu equipamento funcionando
+              da melhor maneira possível.
+            </p>
+          </div>
+
+          <div class="col-md-5 col-sm-12">
+            <img
+              id="img-sobre"
+              src="./images/computador.jpg"
+              alt="Imagem Exemplo"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="produtos">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>Produtos em Destaque</h2>
+
+            <div class="card">
+              <img
+                class="img"
+                src="./images/pexels-athena-2582928.jpg"
+                alt="Imagem Exemplo"
+                class="img-fluid"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Memória Ram</h5>
+                <p class="card-text">
+                  A memória RAM (Random Access Memory) é uma das peças
+                  fundamentais do hardware de um computador. Ela é responsável
+                  por armazenar temporariamente os dados e programas que estão
+                  sendo executados em tempo real, permitindo que o processador
+                  tenha acesso rápido e eficiente a essas informações.
+                </p>
+                <a
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-1"
+                  >Mais informações</a
+                >
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                class="img"
+                src="./images/pexels-洋榤-郭-2399840.jpg"
+                alt="Imagem Exemplo"
+                class="img-fluid"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Placa mãe</h5>
+                <p class="card-text">
+                  A placa-mãe é a peça central de um computador, responsável por
+                  conectar todos os componentes do sistema, como processador,
+                  memória RAM, placa de vídeo, entre outros. Além de ser o
+                  principal componente de conexão, a placa-mãe também é
+                  responsável por controlar e gerenciar os dados e informações
+                  que circulam entre esses componentes.
+                </p>
+                <a
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-2"
+                  >Mais informações</a
+                >
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                class="img"
+                src="./images/intel9.webp"
+                alt="Imagem Exemplo"
+                class="img-fluid"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Processadores</h5>
+                <p class="card-text">
+                  Processadores são componentes essenciais em qualquer
+                  computador ou dispositivo eletrônico que requer processamento
+                  de dados. São responsáveis por executar as instruções do
+                  software e realizar operações aritméticas e lógicas. Existem
+                  diferentes tipos de processadores, dos mais simples até os
+                  mais complexos, utilizados em supercomputadores.
+                </p>
+                <a
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-3"
+                  >Mais informações</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cadastro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <h2 id="contato">Cadastro</h2>
+            <p>Ficou interessado? Preencha os campos do formulário para receber
+              uma cotação.</p>
+          </div>
+
+          <form class="form">
+            <div class="row">
+              
+              <div class="row">
+                <div class="col">
+                  <label for="nome" class="col-form-label-sm"
+                  >Nome</label
+                >
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                  />
+                </div>
+              </div>
+
+              <div class="crow">
+                <div class="col">
+                  <label for="email" class="col-form-label-sm"
+                  >E-mail</label
+                >
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="email"
+                    placeholder="Digite seu email"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label for="endereco" class="col-form-label-sm"
+                  >Endereço Completo</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="endereco"
+                  placeholder="Endereço Completo"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label for="cidade" class="col-form-label-sm">Cidade</label>
+                <input
+                  type="text"
+                  name="cidade"
+                  id="cidade"
+                  placeholder="Digite sua cidade"
+                  class="form-control"
+                />
+              </div>
+
+              <div class="col">
+                <label for="cep" class="col-form-label-sm">Telefone</label>
+                <input
+                  type="number"
+                  name="telefone"
+                  id="telefone"
+                  placeholder="Digite seu telefone"
+                  class="form-control"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="input-group">
+                  <label for="info" class="col-form-label-sm"
+                    >Informações</label
+                  >
+                  <textarea
+                    class="form-control"
+                    name="informações"
+                    id="info"
+                    rows="5"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+
+       
+              <button type="submit" class="btn btn-lg btn-success">
+                Solicitar Cotação
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal fade" id="modal-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Memória Ram</h5>
+            <button
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h6>Confira os preços</h6>
+            <table class="table table-hover table-striped">
+              <thead>
+                <tr>
+                  <th>Produto</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Memória RAM Signature 8GB</td>
+                  <td>R$ 194,00</td>
+                </tr>
+                <tr>
+                  <td>Memória RAM Fury 32GB HyperX</td>
+                  <td>R$ 939,00</td>
+                </tr>
+                <tr>
+                  <td>Memória RAM Vengeance RGB 64GB</td>
+                  <td>R$ 1.650,00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Placa mãe</h5>
+            <button
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h6>Confira os preços</h6>
+            <table class="table table-hover table-striped">
+              <thead>
+                <tr>
+                  <th>Produto</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Placa-mãe Gigabyte Amd B550m Aorus Elite 4x</td>
+                  <td>R$ 949,00</td>
+                </tr>
+                <tr>
+                  <td>Placa Mãe Lga 1200 Asus Tuf Gaming B460m s</td>
+                  <td>R$ 927,00</td>
+                </tr>
+                <tr>
+                  <td>Placa Mãe Lga1151 Chipset H310 I3/i5/i7/pentium</td>
+                  <td>R$ 360,00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-3">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Processadores</h5>
+            <button
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h6>Confira os preços</h6>
+            <table class="table table-hover table-striped">
+              <thead>
+                <tr>
+                  <th>Produto</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Processador Intel Core i9-13900k</td>
+                  <td>R$ 4.530,00</td>
+                </tr>
+                <tr>
+                  <td>Processador Intel Core I7-12700kf</td>
+                  <td>R$ 2.974,00</td>
+                </tr>
+                <tr>
+                  <td>Processador Intel Core i5-8400/td></td>
+                  <td>R$ 929,00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>Loja Tech</footer>
+
+    <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
