@@ -166,8 +166,7 @@
         <div class="row">
           <div class="col-md-12 col-sm-12">
             <h2 id="contato">Cadastro</h2>
-            <p>Ficou interessado? Preencha os campos do formulário para receber
-              uma cotação.</p>
+            <p id="p-contato">Cadastre-se para receber nossas promoções.</p>
           </div>
 
           <form class="form">
@@ -205,7 +204,7 @@
             <div class="row">
               <div class="col">
                 <label for="endereco" class="col-form-label-sm"
-                  >Endereço Completo</label
+                  >Endereço</label
                 >
                 <input
                   type="text"
@@ -229,9 +228,9 @@
               </div>
 
               <div class="col">
-                <label for="cep" class="col-form-label-sm">Telefone</label>
+                <label for="telefone" class="col-form-label-sm">Telefone</label>
                 <input
-                  type="number"
+                  type=""
                   name="telefone"
                   id="telefone"
                   placeholder="Digite seu telefone"
@@ -240,25 +239,20 @@
               </div>
             </div>
 
+
             <div class="row">
               <div class="col">
                 <div class="input-group">
                   <label for="info" class="col-form-label-sm"
-                    >Informações</label
-                  >
-                  <textarea
-                    class="form-control"
-                    name="informações"
-                    id="info"
-                    rows="5"
-                  ></textarea>
+                    >Informações</label>
+                  <textarea class="form-control" name="informações" id="info" rows="5"></textarea>
                 </div>
               </div>
             </div>
 
        
               <button type="submit" class="btn btn-lg btn-success">
-                Solicitar Cotação
+                Enviar
               </button>
             </form>
           </div>
@@ -413,8 +407,29 @@
       </div>
     </div>
 
-    <footer>Loja Tech</footer>
+    <footer>
+      <div id="info">
+        <h3>Venham nos visitar</h3>
+        <ul>
+          <li>Rua Cristovão Colombo, 100, </li>
+          <li>São Paulo</li>
+          <li>Cep:01.150-000</li>
+          <li>Telefone: (11) 99876-0000</li>
+        </ul>
+      </div>
+
+        <div id="redes-sociais">
+          <ion-icon id="facebook" name="logo-facebook"></ion-icon>
+          <ion-icon id="instagram" name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+          <ion-icon name="logo-youtube"></ion-icon>
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </div>
+      
+    </footer>
 
     <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
